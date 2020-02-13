@@ -18,8 +18,13 @@ end
 def play(songs)
 puts "Please enter a song name or number:"
  input = gets.strip
- index = (input.to_i)-1
- puts "Playing #{songs[index]}"
+ songs.each |song| 
+    if input == song
+      puts "Playing #{song}"
+    else
+      index = (input.to_i)-1
+      puts "Playing #{songs[index]}"
+    end 
 end
 
 def list(songs)
