@@ -23,13 +23,13 @@ def hash(songs)
   puts hash
 end 
   
-def list(hash(songs))
+def list(hash)
   hash.each_pair do |key,value| 
   puts "#{key}. #{value}"
   end
 end  
 
-def play(hash(songs))
+def play(hash)
 puts "Please enter a song name or number:"
 input = gets.strip
 hash.each_pair do |key, value| 
