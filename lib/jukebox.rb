@@ -36,7 +36,7 @@ hash.each_pair do |key, value|
   if input == value 
     puts "Playing #{value}"
   else
-     input = input.to_i
+     input.to_i
      if input == key
       puts "Playing #{value}"
      else 
