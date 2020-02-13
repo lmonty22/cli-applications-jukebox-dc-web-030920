@@ -1,4 +1,8 @@
 # Add your code here
+def say_hellp(name)
+  "Hi #{name}!"
+end 
+
 def help 
 end 
 
