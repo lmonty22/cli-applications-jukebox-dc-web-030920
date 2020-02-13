@@ -16,10 +16,14 @@ def help
   puts "- Please enter a command:"
 end 
 
-def play
+def play(songs)
 end
 
-def list 
+def list(songs)
+  songs.each_with_index do |index, song| 
+    song_number = index + 1 
+    puts "#{song_number}. #{song}"/n
+  end 
 end 
 
 def exit_jukebox 
@@ -30,10 +34,10 @@ def commands(input)
     help 
   end 
   if input == "list"
-    list
+    list(songs)
   end 
   if input == "play"
-    play
+    play(songs)
   end 
   if input == "exit"
     exit_jukebox
