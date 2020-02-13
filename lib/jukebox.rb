@@ -23,7 +23,7 @@ def hash(songs)
   puts hash
 end 
   
-def list(hash1)
+def list(song_hash)
   hash.each_pair do |key,value| 
   puts "#{key}. #{value}"
   end
