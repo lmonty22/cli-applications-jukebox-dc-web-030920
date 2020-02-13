@@ -25,15 +25,6 @@ def list(songs)
   end
 end  
 
-def roll_call_dwarves(array) # code an argument here
-  # Your code here
- hash = {}
- array.each_with_index {|d, index|
-    index += 1
-    hash[index] = d }
- puts hash
-end
-
 def play(songs)
 puts "Please enter a song name or number:"
  input = gets.strip
