@@ -17,7 +17,7 @@ end
 
 def list(songs)
   hash = {}
-  songs.each_with_index do |index, song| 
+  songs.each_with_index do |song, index| 
     hash[index+1] = song
   end 
   hash
