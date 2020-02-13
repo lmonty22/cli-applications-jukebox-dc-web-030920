@@ -44,7 +44,11 @@ def commands(input, songs)
   end 
 end 
 
-def run(songs)
- puts "Please enter a command:"
+def prompt_user (songs)
+puts "Please enter a command:"
  commands(user_input, songs)
+end 
+
+def run(songs)
+ promt_user(songs)
 end 
