@@ -20,7 +20,8 @@ def list(songs)
   songs.each_with_index {|song, index|
     index += 1
     hash[index] = song}
-  puts hash
+  hash.each_pail do |key,value| 
+  puts "#{key}. #{value}"
 end  
 
 def roll_call_dwarves(array) # code an argument here
