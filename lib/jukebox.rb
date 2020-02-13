@@ -15,7 +15,7 @@ def help
   puts "- exit : exits this program"
 end 
 
-def play(songs, user_input)
+def play(songs)
 puts "Please enter a song name or number:"
  input = user_input.to_i 
  index = input - 1 
@@ -40,7 +40,7 @@ def commands(songs, input)
     list(songs)
   end 
   if input == "play"
-    play(songs, user_input)
+    play(songs)
   end 
   if input == "exit"
     exit_jukebox
