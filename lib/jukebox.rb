@@ -23,6 +23,7 @@ def list(songs)
   hash = songs.each_with_index do |index, song| 
     hash[index+1] = song
   end 
+  hash
 end 
 
 def exit_jukebox 
