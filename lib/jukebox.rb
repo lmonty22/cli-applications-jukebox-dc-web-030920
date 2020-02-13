@@ -28,14 +28,22 @@ end
 def play(songs)
 puts "Please enter a song name or number:"
  input = gets.strip
- songs.each do |song| 
-    if input == song
-      puts "Playing #{song}"
-    else
-      index = (input.to_i)-1
-      puts "Playing #{songs[index]}"
+ hash = {}
+  songs.each_with_index {|song, index|
+    index += 1
+    hash[index] = song}
+hash.each_pair do |key, value| 
+  if input == value 
+    puts "Playing #{value}"
+  else
+     input = input.to_i
+     if input == key
+      puts "Playing #{value}"
+     else 
+      puts "Invalid input, please try again"
     end 
   end 
+end 
 end
 
 
