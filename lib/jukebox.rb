@@ -14,18 +14,21 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
 end 
-
-def list(songs)
+def hash(songs)
   hash = {}
   songs.each_with_index {|song, index|
     index += 1
     hash[index] = song}
+  puts hash
+end 
+  
+def list(hash)
   hash.each_pair do |key,value| 
   puts "#{key}. #{value}"
   end
 end  
 
-def play(songs)
+def play(hash)
 puts "Please enter a song name or number:"
  hash = {}
   songs.each_with_index {|song, index|
@@ -58,10 +61,10 @@ def commands(songs, input)
     help 
   end 
   if input == "list"
-    list(songs)
+    list(hash(songs))
   end 
   if input == "play"
-    play(songs)
+    play(hash(songs))
   end 
   if input == "exit"
     exit_jukebox
