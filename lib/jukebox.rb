@@ -30,10 +30,6 @@ end
 
 def play(hash)
 puts "Please enter a song name or number:"
- hash = {}
-  songs.each_with_index {|song, index|
-    index += 1
-    hash[index] = song}
 input = gets.strip
 hash.each_pair do |key, value| 
   if input == value 
@@ -44,7 +40,7 @@ hash.each_pair do |key, value|
       puts "Playing #{value}"
      else 
       puts "Invalid input, please try again"
-    end 
+      end 
   end 
 end 
 end
