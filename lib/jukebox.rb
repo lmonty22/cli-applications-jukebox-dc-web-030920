@@ -40,7 +40,7 @@ hash.each_pair do |key, value|
      #if s == key
       #puts "Playing #{value}"
      #else 
-      puts "Invalid input, please try again"
+      # puts "Invalid input, please try again"
       #end 
   end 
   end
