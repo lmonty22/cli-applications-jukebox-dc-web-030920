@@ -39,10 +39,11 @@ hash.each_pair do |key, value|
   else
      s = input.to_i
      if s == key
-        puts "Playing #{value}"
+        message = "Playing #{value}"
       end 
   end 
   end
+  puts message
 end
 
 
