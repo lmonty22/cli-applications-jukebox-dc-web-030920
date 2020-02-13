@@ -32,15 +32,14 @@ puts "Please enter a song name or number:"
   songs.each_with_index {|song, index|
     index += 1
     hash[index] = song}
+message = "Invalid input, please try again"
 hash.each_pair do |key, value| 
   if input == value 
-    puts "Playing #{value}"
+    message = "Playing #{value}"
   else
      s = input.to_i
      if s == key
         puts "Playing #{value}"
-     #else 
-      # puts "Invalid input, please try again"
       end 
   end 
   end
