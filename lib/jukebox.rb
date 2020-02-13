@@ -19,7 +19,7 @@ def play(songs, user_input)
 puts "Please enter a song name or number:"
  input = user_input.to_i 
  index = input - 1 
- puts "Playing #{songs[index]}
+ puts "Playing #{songs[index]}"
 end
 
 def list(songs)
