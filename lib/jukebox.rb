@@ -15,7 +15,10 @@ def help
   puts "- exit : exits this program"
 end 
 
-def play(songs)
+def play(songs, user_input)
+ input = user_input.to_i 
+ index = input - 1 
+ songs[index]
 end
 
 def list(songs)
