@@ -50,5 +50,5 @@ puts "Please enter a command:"
 end 
 
 def run(songs)
- promt_user(songs)
+ prompt_user(songs)
 end 
