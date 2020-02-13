@@ -29,7 +29,7 @@ end
 def exit_jukebox 
 end 
 
-def commands(input)
+def commands(input, songs)
   if input == "help"
     help 
   end 
@@ -46,5 +46,5 @@ end
 
 def run(songs)
  puts "Please enter a command:"
- commands(user_input)
+ commands(user_input, songs)
 end 
