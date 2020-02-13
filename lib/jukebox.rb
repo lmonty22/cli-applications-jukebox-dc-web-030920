@@ -52,7 +52,6 @@ puts "Please enter a command:"
 end 
 
 def run(songs)
- prompt_user(songs)
- prompt_user until user_input == 
+ prompt_user(songs)until user_input == 
  "exit"
 end 
