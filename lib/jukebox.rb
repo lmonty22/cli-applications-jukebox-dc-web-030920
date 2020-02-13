@@ -20,8 +20,8 @@ def play(songs)
 end
 
 def list(songs)
-  songs.each_with_index do |index, song| 
-    puts "#{index+1}. #{song}"/n
+  hash = songs.each_with_index do |index, song| 
+    hash[index+1] = song
   end 
 end 
 
