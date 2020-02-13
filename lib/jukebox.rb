@@ -8,7 +8,6 @@ def user_input
 end 
 
 def help 
-  puts "- Please enter a command:"
   puts "I accept the following commands:"
   puts "- help: displays this help message"
   puts "- list: displays a list of songs"
