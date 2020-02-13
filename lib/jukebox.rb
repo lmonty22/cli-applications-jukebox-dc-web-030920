@@ -39,7 +39,7 @@ def commands(input, songs)
     list(songs)
   end 
   if input == "play"
-    play(songs)
+    play(songs, user_input)
   end 
   if input == "exit"
     exit_jukebox
