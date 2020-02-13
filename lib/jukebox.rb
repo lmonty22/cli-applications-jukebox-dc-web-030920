@@ -15,24 +15,24 @@ def help
   puts "- exit : exits this program"
 end 
 
-def hash(songs)
+def list(songs)
   hash = {}
   songs.each_with_index {|song, index|
     index += 1
     hash[index] = song}
-  puts hash
-end 
-  
-def list(song_hash)
-  song_hash.each_pair do |key,value| 
+  hash.each_pair do |key,value| 
   puts "#{key}. #{value}"
   end
 end  
 
-def play(hash1)
+def play(songs)
 puts "Please enter a song name or number:"
-input = gets.strip
-hash1.each_pair do |key, value| 
+ input = gets.strip
+ hash = {}
+  songs.each_with_index {|song, index|
+    index += 1
+    hash[index] = song}
+hash.each_pair do |key, value| 
   if input == value 
     puts "Playing #{value}"
   else
@@ -43,7 +43,7 @@ hash1.each_pair do |key, value|
       puts "Invalid input, please try again"
       end 
   end 
-end 
+  end
 end
 
 
@@ -58,10 +58,10 @@ def commands(songs, input)
     help 
   end 
   if input == "list"
-    list(hash(songs))
+    list(songs)
   end 
   if input == "play"
-    play(hash(songs))
+    play(songs)
   end 
   if input == "exit"
     exit_jukebox
