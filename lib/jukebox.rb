@@ -15,6 +15,14 @@ def help
   puts "- exit : exits this program"
 end 
 
+def list(songs)
+  hash = {}
+  songs.each_with_index do |index, song| 
+    hash[index+1] = song
+  end 
+  hash
+end  
+
 def play(songs)
 puts "Please enter a song name or number:"
  input = gets.strip
@@ -28,12 +36,7 @@ puts "Please enter a song name or number:"
   end 
 end
 
-def list(songs)
-  hash = songs.each_with_index do |index, song| 
-    hash[index+1] = song
-  end 
-  hash
-end 
+
 
 def exit_jukebox 
 end 
