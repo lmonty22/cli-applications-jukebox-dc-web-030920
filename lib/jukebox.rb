@@ -21,7 +21,7 @@ end
 
 def list(songs)
   songs.each_with_index do |index, song| 
-    puts "#{index +1}. #{song}"/n
+    puts "#{index+1}. #{song}"/n
   end 
 end 
 
