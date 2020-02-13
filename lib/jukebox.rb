@@ -17,12 +17,20 @@ end
 
 def list(songs)
   hash = {}
-  songs.each_with_index do |song, index|
+  songs.each_with_index {|song, index|
     index += 1
-    hash[index] = song
-  end 
-  hash
+    hash[index] = song}
+  puts hash
 end  
+
+def roll_call_dwarves(array) # code an argument here
+  # Your code here
+ hash = {}
+ array.each_with_index {|d, index|
+    index += 1
+    hash[index] = d }
+ puts hash
+end
 
 def play(songs)
 puts "Please enter a song name or number:"
