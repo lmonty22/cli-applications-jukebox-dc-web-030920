@@ -36,7 +36,7 @@ def commands(input)
     play
   end 
   if input == "exit"
-    exit
+    exit_jukebox
   end 
 end 
 
