@@ -32,7 +32,7 @@ end
 def play(hash1)
 puts "Please enter a song name or number:"
 input = gets.strip
-hash.each_pair do |key, value| 
+hash1.each_pair do |key, value| 
   if input == value 
     puts "Playing #{value}"
   else
