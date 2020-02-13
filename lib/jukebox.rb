@@ -53,4 +53,6 @@ end
 
 def run(songs)
  prompt_user(songs)
+ prompt_user until user_input == 
+ "exit"
 end 
