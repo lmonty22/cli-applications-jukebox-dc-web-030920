@@ -24,7 +24,7 @@ def hash(songs)
 end 
   
 def list(song_hash)
-  hash.each_pair do |key,value| 
+  song_hash.each_pair do |key,value| 
   puts "#{key}. #{value}"
   end
 end  
