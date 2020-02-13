@@ -27,11 +27,11 @@ end
 
 def play(songs)
 puts "Please enter a song name or number:"
- input = gets.strip
  hash = {}
   songs.each_with_index {|song, index|
     index += 1
     hash[index] = song}
+input = gets.strip
 hash.each_pair do |key, value| 
   if input == value 
     puts "Playing #{value}"
