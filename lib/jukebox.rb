@@ -41,7 +41,7 @@ hash.each_pair do |key, value|
       #puts "Playing #{value}"
      #else 
       puts "Invalid input, please try again"
-      end 
+      #end 
   end 
   end
 end
