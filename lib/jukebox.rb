@@ -20,7 +20,7 @@ def list(songs)
   songs.each_with_index {|song, index|
     index += 1
     hash[index] = song}
-  hash.each_pail do |key,value| 
+  hash.each_pair do |key,value| 
   puts "#{key}. #{value}"
   end
 end  
