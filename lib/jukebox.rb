@@ -22,6 +22,7 @@ def list(songs)
     hash[index] = song}
   hash.each_pail do |key,value| 
   puts "#{key}. #{value}"
+end
 end  
 
 def roll_call_dwarves(array) # code an argument here
